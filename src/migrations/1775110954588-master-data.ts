@@ -14,10 +14,7 @@ const organizations = [
   { orgId: '983268ce-3cd3-47f9-adc2-4b6b416b2a1e', orgName: 'Dunder Mifflin' },
   { orgId: 'd7b982af-0d32-4151-81ac-ad2276e86139', orgName: 'Vandelay Industries' },
 ];
-
-// The single admin belongs to the first org but has visibility across all orgs via role
-
-export class MasterOrganizationAdmin1775024979354 implements MigrationInterface {
+export class MasterData1775110954588 implements MigrationInterface {
   public async up(queryRunner: QueryRunner): Promise<void> {
     for (const org of organizations) {
       await queryRunner.query(`

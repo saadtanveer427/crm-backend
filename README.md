@@ -11,6 +11,17 @@ for locally setup
 npm install
 cp .env.example .env   # fill in your values
 npm run start:dev
+
+env Setup for local
+DATABASE_HOST=localhost
+DATABASE_PORT=5432
+DATABASE_USERNAME=XXXXXXX
+DATABASE_PASSWORD=XXXXXXXX
+DATABASE_NAME=XXXXXXXXx
+
+PORT=XXXX
+
+JWT_SECRET=XXXXX
 ```
 
 migration: npm run migration:run
